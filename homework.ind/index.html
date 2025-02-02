@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полноценный цифровой продукт</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="nav-link">Главная</a>
+      <a href="#gallery" class="nav-link">Галерея</a>
+      <a href="#contact" class="nav-link">Контакты</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <div class="content">
+        <h1>Добро пожаловать!</h1>
+        <button id="modalBtn" class="btn">Открыть модальное окно</button>
+      </div>
+    </section>
+    <section id="gallery">
+      <h2>Галерея</h2>
+      <div class="slider">
+        <img src="https://fotoblik.ru/wp-content/uploads/2023/09/chelovek-i-priroda-8.webp" alt="Image 1" class="slide active">
+        <img src="https://fotoblik.ru/wp-content/uploads/2023/09/dushevnyi-pokoi-2.webp" alt="Image 2" class="slide">
+        <img src="https://fotoblik.ru/wp-content/uploads/2023/09/chelovek-na-obryve-7.webp" alt="Image 3" class="slide">
+        <button class="prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Контакты</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Имя" class="input-field">
+        <input type="email" id="email" placeholder="Email" class="input-field">
+        <button type="submit" class="btn">Отправить</button>
+        <div id="formMessage"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Все права защищены &copy; 2025</p>
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Это модальное окно!</p>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>
